@@ -82,7 +82,7 @@ export default {
       radio: "1",
       listArg: [
         {
-          name: "吉林省中奕化工经贸有限公司",
+          name: "吉林中奕化工经贸有限公司",
           sum: 10,
           cont: 20,
         },
