@@ -1,0 +1,44 @@
+.head {
+    width: 100%;
+    height: 720px;
+
+    background-image: url(../image/1.jpg);
+}
+
+.top {
+    width: 1358px;
+    margin: 0 auto;
+    height: 78px;
+    position: relative;
+}
+
+.logo {
+    background-image: url(../image/logo-public.png);
+    width: 167px;
+    height: 60px;
+    left: 0;
+    position: absolute;
+
+}
+
+.top_tit {
+    position: absolute;
+    height: 78px;
+    left: 175px;
+    width: 50%;
+}
+
+.top_tit  li {
+    float: left;
+    width: 20%;
+    height: 78px;
+    text-align: center;
+    padding-top: 18px;
+    
+}
+
+.top_tit .asd {
+    font-size: 18px;
+    color: aliceblue;
+
+}

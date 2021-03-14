@@ -1,0 +1,404 @@
+a, b, body, dd, del, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var, input {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+img,button,input {
+    border: 0;
+}
+em, i, u {
+    font-style: normal;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearfix {
+    *zoom: 1;
+}
+body {
+    font: 12px/1.5 'microsoft yahei',Arial, Verdana, "\5b8b\4f53";
+    color: #666;
+}
+a {
+    color: #666;
+    text-decoration: none;
+    font-family: 'microsoft yahei';
+}
+a:hover {
+    color: #c81623;
+}
+/* 版心公共类 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.pl-5 {
+    padding-left: 5px;
+}
+.pr-5 {
+    padding-right: 5px;
+}
+.pt-5 {
+    padding-top: 5px;
+}
+.pd-5 {
+    padding-bottom: 5px;
+}
+.m-color {
+    color: #c81623;
+}
+/* 针对字体图标 避免对旁边的问题的高度造成影响*/
+.iconfont {
+    line-height: 1;
+}
+img {
+    vertical-align: top;
+}
+.one-txt-cut {
+    /* 这三句话缺一不可 */
+    overflow: hidden;
+    /* 文本强制不换行 */
+    white-space: nowrap;
+    /* 以省略号的形式显示多余的文本 */
+    text-overflow:ellipsis;
+}
+
+/* 头部区域开始 */
+.top-bar {
+    border-bottom: 2px solid #b1191a;
+}
+.short-top {
+    background-color: #f1f1f1;
+    line-height: 30px;
+}
+.short-top .st-l {
+    height: 30px;
+}
+.short-top .st-r {
+    height: 30px;
+}
+.short-top .st-r li {
+    float: left;
+}
+.short-top .st-r li.line {
+    width: 1px;
+    height: 10px;
+    background-color: #666;
+    margin: 10px 10px 0;
+}
+
+.st-r .iconfont {
+    position: relative;
+    top: 1px;
+}
+.site-header {
+    height: 105px;
+    position: relative;
+}
+.logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -31px;
+    width: 171px;
+    height: 62px;
+    background: url(../images/logo.png) 0 0 no-repeat;
+    /* text-indent: -99999px; */
+    /* 将文字隐藏起来 */
+    font-size: 0;
+}
+.search {
+    position: absolute;
+    left: 350px;
+    top: 25px;
+    background-color: red;
+}
+/* 属性选择器 [属性=“值”] */
+.search input[type="text"] {
+    width: 454px;
+    height: 32px;
+    border: 2px solid #b1191a;
+    border-right: none;
+    float: left;
+    text-indent: 20px;
+    outline: none;
+}
+.search button {
+    height: 36px;
+    width: 82px;
+    background-color: #b1191a;
+    float: left;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+.cart {
+    width: 138px;
+    height: 33px;
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 64px;
+    top: 25px;
+    text-align: center;
+    line-height: 33px;
+    background-color: #fff;
+}
+.icon-youjiantou {
+    position: relative;
+    top: 2px;
+}
+.cart .count {
+    position: absolute;
+    height: 14px;
+    background-color: red;
+    left: 105px;
+    top: -10px;
+    line-height: 14px;
+    padding: 2px 4px;
+    color: #fff;
+    border-radius: 10px 10px 10px 0;
+}
+.cart .cart-info {
+    width: 310px;
+    /* 最小高 */
+    min-height: 70px;
+    background-color: #fff;
+    position: absolute;
+    right: -1px;
+    top: 33px;
+    border: 1px solid #ccc;
+    display: none;
+}
+.cart:hover .cart-info {
+    display: block;
+}
+.white-line {
+    width: 138px;
+    height: 4px;
+    background-color: #fff;
+    position: absolute;
+    top: -3px;
+    right: 0;
+}
+/* 字体图标使用的细节：
+1、给字体图标设置一个默认的行高 建议1
+2、字体图标的大小设置在自身身上 */
+.search button .iconfont {
+    font-size: 20px;
+}
+.hot-search {
+    position: absolute;
+    top: 60px;
+    left: 350px;
+    line-height: 30px;
+}
+.hot-search a {
+    margin-right: 10px;
+}
+.classify-nav {
+}
+.classify-nav .cn-l {
+    position: relative;
+    width: 210px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: #b1191a;
+}
+.classify-nav .cn-l h3 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.classify-nav .cn-l .cn-dropdown {
+    width: 210px;
+    height: 465px;
+    background-color: #c81623;
+    position: absolute;
+    top: 47px;
+    left: 0;
+    /* display: none; */
+}
+.cn-dropdown ul {
+    border:1px solid #c81623;
+    background-color: #c81623;
+}
+.cn-dropdown ul li {
+    height: 31px;
+    line-height: 31px;
+    text-align: left;
+    /* 这个属性只在块元素生效 */
+    text-indent: 10px;
+    position: relative;
+}
+.cn-dropdown ul li:hover {
+    background-color: #fff;
+}
+.cn-dropdown ul li:hover a {
+    color: #333;
+}
+.cn-dropdown ul li a {
+    color: #fff;
+}
+.cn-dropdown ul li .iconfont {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -8px;
+    color: #fff;
+}
+.classify-nav .cn-r {
+    height: 45px;
+}
+.classify-nav .cn-r li {
+    float: left;
+    margin-left: 50px;
+    line-height: 45px;
+    font-size: 16px;
+    position: relative;
+}
+.classify-nav .cn-r .hot {
+    /* 绝对定位的元素没有宽度的情况下 内容有多大就撑多大，最大不超过它相对的那个父级元素 */
+    width: 70px;
+    height: 20px;
+    background-color: #b1191a;
+    position: absolute;
+    top: -12px;
+    left: 23px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px 10px 10px 0;
+    font-size: 12px;
+}
+/* 头部区域结束 */
+/* 底部区域开始 */
+.footer {
+    background-color: #f5f5f5;
+}
+.footer-h {
+    border-bottom: 1px solid #ededed;
+}
+.footer-h li {
+    position: relative;
+    width: 20%;
+    height: 109px;
+    float: left;
+    text-indent: 95px;
+}
+.footer-h li h3 {
+    margin-top: 33px;
+}
+.footer-h .icon {
+    width: 49px;
+    height: 49px;
+    position: absolute;
+    left: 38px;
+    top: 50%;
+    margin-top: -25px;
+    background:  url(../images/icons.png) -253px -3px no-repeat;
+}
+.footer-b {
+    border-bottom: 1px solid #ededed;
+}
+.footer-b dl {
+    width: 16.66%;
+    float: left;
+    text-indent: 50px;
+    padding-bottom: 20px;
+}
+.footer-b dl dt {
+    height: 44px;
+    line-height: 44px;
+    margin-top: 7px;
+    font-size: 16px;
+}
+.footer-b dl dd {
+    line-height: 20px;
+}
+.footer-b dl.last {
+    text-align: center;
+    text-indent: 0;
+}
+.footer-f {
+    height: 100px;
+}
+.footer-nav {
+    text-align: center;
+}
+.footer-nav .line {
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 3;
+}
+.footer-f p {
+    text-align: center;
+    margin-top: 5px;
+}
+/* 底部区域结束 */
+
+/* 分页公共模块 */
+.page-wrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.page-wrap li {
+    display: inline-block;
+    line-height: 30px;
+    padding:0 15px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.page-wrap li:hover {
+    background-color: #ccc;
+}
+.page-wrap li.all-page:hover,
+.page-wrap li.active-page:hover,
+.page-wrap li.btn:hover {
+    background-color: #fff;
+}
+.page-wrap li.noborder {
+    border: 0;
+}
+.active-page input {
+    width: 40px;
+    height: 28px;
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    margin-right: 5px;
+    outline: none;
+    text-align: center;
+}
+.page-wrap li.btn button {
+    width: 40px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    outline: none;
+}
+/* 分页公共模块 */
