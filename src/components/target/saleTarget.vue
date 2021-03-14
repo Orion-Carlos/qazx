@@ -193,7 +193,7 @@ export default {
 
   .source {
     font-size: 0.18rem;
-    color: #666666;
+    color: #ccc;
     position: absolute;
     bottom: 0;
   }
